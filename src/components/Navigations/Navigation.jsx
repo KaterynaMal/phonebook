@@ -1,14 +1,13 @@
-import UserMenu from 'components/UserMenu/UserMenu';
+// import UserMenu from 'components/UserMenu/UserMenu';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import css from './Navigation.module.css';
 
-const Navigation = ({ children }) => {
+const Navigation = () => {
     return (
         <div>
-           <header className={css.header}>
-        <NavLink
+           <NavLink
           className={({ isActive }) =>
             `${css.navLink} ${isActive ? css.active : ''}`
           }
@@ -40,9 +39,6 @@ const Navigation = ({ children }) => {
         >
           Contacts
                 </NavLink>
-                <UserMenu></UserMenu>
-      </header>
-      <main>{children}</main>
         </div>
     )
 };
