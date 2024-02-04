@@ -11,14 +11,14 @@ const Navigation = () => {
 
     return (
         <div className={css.navigation}>
-           <NavLink
+           {/* <NavLink
           className={({ isActive }) =>
             `${css.navLink} ${isActive ? css.active : ''}`
           }
           to="/"
         >
-          {/* Home */}
-        </NavLink>
+          Home 
+         </NavLink> */}
         {isLoggedIn ? (
 <NavLink
           className={({ isActive }) =>
