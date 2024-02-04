@@ -2,7 +2,7 @@ import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 import { apiRegisterUser, apiLoginUser, apiRefreshUser } from 'services/api';
 
 const initialState = {
-    user: { name: null, email: null },  // ?
+    // user: { name: null, email: null },  // ?
   token: null,
   userData: null,
   isLoggedIn: false,
