@@ -1,10 +1,44 @@
+.navigation {
+  display: flex;
+ position: relative;
+
+}
+
+.contacts {
+    margin-right: 250px;
+}
+
 .navLink {
-    font-size: 32px;
-    font-weight: 500px;
-    text-decoration: none;
-    color: white;
+  font-size: 38px;
+  font-weight: 500px;
+  text-decoration: none;
+  color: rgb(56, 55, 55);
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}
+
+.loginRegister {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 500px;
+  margin-right: 25px;
+}
+
+.loginRegisterContainer::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: rgb(56, 55, 55);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    flex-shrink: 0;
 }
 
 .active {
-    text-decoration: underline;
+  text-decoration: underline;
+  color: rgb(28, 113, 49);
 }

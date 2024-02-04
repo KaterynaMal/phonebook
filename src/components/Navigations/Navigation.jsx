@@ -6,7 +6,7 @@ import css from './Navigation.module.css';
 
 const Navigation = () => {
     return (
-        <div>
+        <div className={css.navigation}>
            <NavLink
           className={({ isActive }) =>
             `${css.navLink} ${isActive ? css.active : ''}`
@@ -15,30 +15,36 @@ const Navigation = () => {
         >
           {/* Home */}
         </NavLink>
-        <NavLink
+         <NavLink
           className={({ isActive }) =>
-            `${css.navLink} ${isActive ? css.active : ''}`
+            `${css.navLink} ${css.contacts} ${isActive ? css.active : ''}`
           }
-          to="/register"
+          to="/contacts"
         >
-          Register
-                </NavLink>
-                 <NavLink
+          
+          Contacts
+        </NavLink>
+        <div className={css.loginRegisterContainer}>
+  <NavLink
           className={({ isActive }) =>
-            `${css.navLink} ${isActive ? css.active : ''}`
+            `${css.navLink} ${css.loginRegister} ${isActive ? css.active : ''}`
           }
           to="/login"
         >
           Login
                 </NavLink>
-                 <NavLink
+        <NavLink
           className={({ isActive }) =>
-            `${css.navLink} ${isActive ? css.active : ''}`
+            `${css.navLink} ${css.loginRegister} ${isActive ? css.active : ''}`
           }
-          to="/contacts"
+          to="/register"
         >
-          Contacts
+          Register
                 </NavLink>
+        </div>
+      
+                 
+                
         </div>
     )
 };

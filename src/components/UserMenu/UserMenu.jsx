@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import css from './UserMenu.module.css';
 
 const UserMenu = () => {
   return (
-    <div>
-  <p>mango@mail.com</p>
-  <button>Logout</button>
+    <div className={css.userMenuContainer}>
+  <p className={css.userMenuMail}>mango@mail.com</p>
+  <button className={css.userMenuButton}>Logout</button>
 </div>
   )
 }

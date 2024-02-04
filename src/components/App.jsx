@@ -11,10 +11,10 @@ function App() {
   return (
     <Layout>
       <Suspense fallback={<Loader/>}>
-      <Routes>
+        <Routes>
+          <Route path="/contacts" element={<ContactsPage />}></Route>
+          <Route path="/login" element={<LoginPage />}></Route>
         <Route path="/register" element={<RegisterPage />}></Route>
-        <Route path="/login" element={<LoginPage />}></Route>
-        <Route path="/contacts" element={<ContactsPage />}></Route>
         </Routes>
         </Suspense>
     </Layout>
