@@ -50,7 +50,7 @@ const clearToken = () => {
 };
 
 export const apiRegisterUser = createAsyncThunk(
-  'user/RegisterUser',
+  'user/apiRegisterUser',
   async (formData, thunkApi) => {
     try {
       const { data } = await $authInstance.post('/users/signup', formData);
