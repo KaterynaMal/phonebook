@@ -1,7 +1,6 @@
 import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 import { apiRegisterUser, apiLoginUser, apiRefreshUser } from 'services/api';
 
-
 const initialState = {
   token: null,
   userData: null,
@@ -12,7 +11,7 @@ const initialState = {
 
 const userSlice = createSlice({
   name: 'user',
-    initialState,
+  initialState,
   extraReducers: builder =>
     builder
       .addCase(apiRegisterUser.fulfilled, (state, action) => {
@@ -55,9 +54,6 @@ const userSlice = createSlice({
           state.error = action.payload;
         }
       ),
-  
-  
 });
-
 
 export const userReducer = userSlice.reducer;
