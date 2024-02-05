@@ -15,7 +15,14 @@ const Layout = ({ children }) => {
         <Navigation></Navigation>
         {isLoggedIn && <UserMenu></UserMenu>}
       </header>
-      <main>{children}</main>
+      <main>
+        {!isLoggedIn && (
+          <p className={css.title}>
+            To see your contacts, please login or register!
+          </p>
+        )}
+        {children}
+      </main>
     </div>
   );
 };
