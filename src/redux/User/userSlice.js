@@ -1,8 +1,12 @@
 import { createSlice, isAnyOf } from '@reduxjs/toolkit';
-import { apiRegisterUser, apiLoginUser, apiRefreshUser, apiLogoutUser } from 'services/api';
+import {
+  apiRegisterUser,
+  apiLoginUser,
+  apiRefreshUser,
+  apiLogoutUser,
+} from 'services/api';
 
 const initialState = {
-    // user: { name: null, email: null },  // ?
   token: null,
   userData: null,
   isLoggedIn: false,
@@ -32,7 +36,7 @@ const userSlice = createSlice({
         state.isLoggedIn = true;
         state.userData = action.payload;
       })
-       .addCase(apiLogoutUser.fulfilled, () => {
+      .addCase(apiLogoutUser.fulfilled, () => {
         return initialState;
       })
 
@@ -53,7 +57,7 @@ const userSlice = createSlice({
           apiRegisterUser.rejected,
           apiLoginUser.rejected,
           apiRefreshUser.rejected,
-          apiLogoutUser.rejected,
+          apiLogoutUser.rejected
         ),
         (state, action) => {
           state.isLoading = false;

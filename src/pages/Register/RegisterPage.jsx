@@ -13,14 +13,14 @@ const RegisterPage = () => {
     const email = e.currentTarget.elements.userEmail.value;
     const password = e.currentTarget.elements.userPassword.value;
 
-       const formData = {
+    const formData = {
       name,
       email,
       password,
-       };
-    
+    };
+
     dispatch(apiRegisterUser(formData));
-}
+  };
 
   return (
     <div>
@@ -29,7 +29,8 @@ const RegisterPage = () => {
       <form onSubmit={onSubmit} className={css.submitForm}>
         <label className={css.label}>
           Name:
-          <input className={css.input}
+          <input
+            className={css.input}
             type="text"
             name="userName"
             placeholder="Kirito"
@@ -39,7 +40,8 @@ const RegisterPage = () => {
         </label>
         <label className={css.label}>
           Email:
-          <input className={css.input}
+          <input
+            className={css.input}
             type="email"
             name="userEmail"
             placeholder="kirito228@hotmail.ua"
@@ -48,7 +50,8 @@ const RegisterPage = () => {
         </label>
         <label className={css.label}>
           Password:
-          <input className={css.input}
+          <input
+            className={css.input}
             type="password"
             name="userPassword"
             placeholder="**********"
@@ -56,11 +59,12 @@ const RegisterPage = () => {
             required
           />
         </label>
-        <button type="submit" className={css.btn}>Sign Up</button>
+        <button type="submit" className={css.btn}>
+          Sign Up
+        </button>
       </form>
-    
     </div>
-  )
-}
+  );
+};
 
-export  default RegisterPage ;
+export default RegisterPage;

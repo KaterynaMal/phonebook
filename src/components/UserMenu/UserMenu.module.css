@@ -1,35 +1,33 @@
 .userMenuContainer {
-    display: flex;
-    flex-direction: column;
-   gap: 10px;
-   margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 25px;
 }
 
 .userMenuMail {
-    margin: 0;
-    font-size: 14px;
-    color: rgb(56, 55, 55);
+  margin: 0;
+  font-size: 14px;
+  color: rgb(56, 55, 55);
 }
 
 .userMenuMail:hover,
 .userMenuMail:focus {
-text-decoration: underline;
-    
+  text-decoration: underline;
 }
 
 .userMenuButton {
-    cursor: pointer;
-    border-radius: 15px;
-    border: 1px solid rgb(56, 55, 55);
-    font-size: 14px;
-    color: rgb(56, 55, 55);
-    background-color: aliceblue;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid rgb(56, 55, 55);
+  font-size: 14px;
+  color: rgb(56, 55, 55);
+  background-color: aliceblue;
 }
 
 .userMenuButton:hover,
 .userMenuButton:focus {
-    /* background-color: rgb(221, 248, 239); */
-    border-color: rgb(28, 113, 49);
-    color: rgb(28, 113, 49);;
-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-color: rgb(28, 113, 49);
+  color: rgb(28, 113, 49);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }

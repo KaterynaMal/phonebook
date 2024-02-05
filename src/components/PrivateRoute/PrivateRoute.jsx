@@ -9,4 +9,4 @@ const PrivateRoute = ({ children, redirectTo = '/login' }) => {
   return isLoggedIn ? children : <Navigate to={redirectTo} replace />;
 };
 
-export {PrivateRoute};
+export { PrivateRoute };

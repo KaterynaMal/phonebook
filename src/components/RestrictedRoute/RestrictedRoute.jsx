@@ -9,4 +9,4 @@ const RestrictedRoute = ({ children }) => {
   return isLoggedIn ? <Navigate to="/contacts" replace /> : children;
 };
 
-export {RestrictedRoute};
+export { RestrictedRoute };

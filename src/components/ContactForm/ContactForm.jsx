@@ -22,7 +22,7 @@ const ContactForm = () => {
       const newNumb = e.currentTarget.elements.number.value;
       const newContact = {
         name: newName,
-        phone: newNumb,
+        number: newNumb,
       };
       dispatch(addContact(newContact));
       e.currentTarget.reset();

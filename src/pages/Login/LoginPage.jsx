@@ -9,12 +9,10 @@ const LoginPage = () => {
   const onSubmit = e => {
     e.preventDefault();
 
-    // const name = e.currentTarget.elements.userName.value;
     const email = e.currentTarget.elements.userEmail.value;
     const password = e.currentTarget.elements.userPassword.value;
 
     const formData = {
-      
       email,
       password,
     };
@@ -27,17 +25,6 @@ const LoginPage = () => {
       <h1 className={css.submitTitle}>LoginPage</h1>
 
       <form onSubmit={onSubmit} className={css.submitForm}>
-        {/* <label className={css.label}>
-          Name:
-          <input
-            className={css.input}
-            type="text"
-            name="userName"
-            placeholder="Kirito"
-            minLength={2}
-            required
-          />
-        </label> */}
         <label className={css.label}>
           Email:
           <input

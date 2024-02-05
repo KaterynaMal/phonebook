@@ -20,20 +20,31 @@ function App() {
     <Layout>
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/contacts" element={
-            <PrivateRoute>
-<ContactsPage />
-            </PrivateRoute>
-            
-          }></Route>
+          <Route
+            path="/contacts"
+            element={
+              <PrivateRoute>
+                <ContactsPage />
+              </PrivateRoute>
+            }
+          ></Route>
 
-          <Route path="/login" element={<RestrictedRoute>
-            <LoginPage />
-          </RestrictedRoute>}></Route>
-           <Route path="/register" element={<RestrictedRoute>
-           <RegisterPage />
-          </RestrictedRoute>}></Route>
-          
+          <Route
+            path="/login"
+            element={
+              <RestrictedRoute>
+                <LoginPage />
+              </RestrictedRoute>
+            }
+          ></Route>
+          <Route
+            path="/register"
+            element={
+              <RestrictedRoute>
+                <RegisterPage />
+              </RestrictedRoute>
+            }
+          ></Route>
         </Routes>
       </Suspense>
     </Layout>

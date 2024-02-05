@@ -3,7 +3,10 @@ import css from './ContactList.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { apiGetContacts, deleteContact } from 'services/api';
 
-import { selectContactItem, selectFilterContact } from '../../redux/Contacts/contactsSlice.selectors';
+import {
+  selectContactItem,
+  selectFilterContact,
+} from '../../redux/Contacts/contactsSlice.selectors';
 
 const ContactList = () => {
   const dispatch = useDispatch();
@@ -31,7 +34,7 @@ const ContactList = () => {
         {filteredContacts.length > 0 ? (
           filteredContacts.map(contact => (
             <li className={css.contact_item} key={contact.id}>
-              {contact.name}: {contact.phone}
+              {contact.name}: {contact.number}
               <button
                 type="button"
                 className={css.delete_btn}

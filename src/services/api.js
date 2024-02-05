@@ -5,12 +5,20 @@ export const $authInstance = axios.create({
   baseURL: 'https://connections-api.herokuapp.com',
 });
 
+const setToken = token => {
+  $authInstance.defaults.headers.common.Authorization = `Bearer ${token}`;
+};
+
+const clearToken = () => {
+  $authInstance.defaults.headers.common.Authorization = '';
+};
+
 export const apiGetContacts = createAsyncThunk(
   'contacts/apiGetContacts',
   async (_, thunkApi) => {
     try {
-      const result = await $authInstance.get('/contacts');
-      return result.data;
+      const { data } = await $authInstance.get('/contacts');
+      return data;
     } catch (error) {
       return thunkApi.rejectWithValue(error.message);
     }
@@ -21,8 +29,8 @@ export const addContact = createAsyncThunk(
   'contacts/addContact',
   async (newContact, thunkApi) => {
     try {
-      const contactData = await $authInstance.post('/contacts', newContact);
-      return contactData.data;
+      const { data } = await $authInstance.post('/contacts', newContact);
+      return data;
     } catch (error) {
       return thunkApi.rejectWithValue(error.message);
     }
@@ -33,21 +41,13 @@ export const deleteContact = createAsyncThunk(
   'contacts/deleteContact',
   async (contactId, thunkApi) => {
     try {
-      await $authInstance.delete(`/contacts/${contactId}`);
-      return contactId;
+      const { data } = await $authInstance.delete(`/contacts/${contactId}`);
+      return data;
     } catch (error) {
       return thunkApi.rejectWithValue(error.message);
     }
   }
 );
-
-const setToken = token => {
-  $authInstance.defaults.headers.common.Authorization = `Bearer ${token}`;
-};
-
-const clearToken = () => {
-  $authInstance.defaults.headers.common.Authorization = '';
-};
 
 export const apiRegisterUser = createAsyncThunk(
   'user/apiRegisterUser',
@@ -67,7 +67,7 @@ export const apiLoginUser = createAsyncThunk(
   async (formData, thunkApi) => {
     try {
       const { data } = await $authInstance.post('/users/login', formData);
-      // { user: {name: 'wdawd', email: 'wdawd@gmail.com' }, token: 'wdawd1212dwdwa' }
+
       setToken(data.token);
 
       return data;
@@ -90,7 +90,6 @@ export const apiLogoutUser = createAsyncThunk(
     }
   }
 );
-
 
 export const apiRefreshUser = createAsyncThunk(
   'user/apiRefreshUser',
