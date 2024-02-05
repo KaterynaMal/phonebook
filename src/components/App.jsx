@@ -1,8 +1,8 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from 'components';
+import { Layout, PrivateRoute, RestrictedRoute } from 'components';
 import { Loader } from 'Loader';
-import { useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { apiRefreshUser } from 'services/api';
 
 const RegisterPage = lazy(() => import('pages/Register/RegisterPage'));
@@ -14,22 +14,30 @@ function App() {
 
   useEffect(() => {
     dispatch(apiRefreshUser());
-  }, [dispatch])
-
+  }, [dispatch]);
 
   return (
     <Layout>
-      <Suspense fallback={<Loader/>}>
+      <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/contacts" element={<ContactsPage />}></Route>
-          <Route path="/login" element={<LoginPage />}></Route>
-        <Route path="/register" element={<RegisterPage />}></Route>
+          <Route path="/contacts" element={
+            <PrivateRoute>
+<ContactsPage />
+            </PrivateRoute>
+            
+          }></Route>
+
+          <Route path="/login" element={<RestrictedRoute>
+            <LoginPage />
+          </RestrictedRoute>}></Route>
+           <Route path="/register" element={<RestrictedRoute>
+           <RegisterPage />
+          </RestrictedRoute>}></Route>
+          
         </Routes>
-        </Suspense>
+      </Suspense>
     </Layout>
   );
 }
 
 export { App };
-
-

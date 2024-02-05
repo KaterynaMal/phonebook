@@ -4,3 +4,5 @@ export { Filter } from './Filter/Filter';
 export { Layout } from './Layout/Layout.jsx';
 export { Navigation } from './Navigations/Navigation.jsx';
 export { UserMenu } from './UserMenu/UserMenu.jsx';
+export { RestrictedRoute } from './RestrictedRoute/RestrictedRoute.jsx';
+export { PrivateRoute } from './PrivateRoute/PrivateRoute';
