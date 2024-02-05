@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/75.a449fb28.chunk.css","mappings":"AAAA,gCACE,gBAAiB,CACjB,iBAAkB,CAClB,kBACF,CAEA,GACE,SACF","sources":["pages/Contacts/Contacts.module.css"],"sourcesContent":[".form_container {\n  margin-left: auto;\n  margin-right: auto;\n  padding-left: 100px;\n}\n\nul {\n  padding: 0;\n}\n"],"names":[],"sourceRoot":""}
