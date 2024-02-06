@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { apiLoginUser } from '../../services/api';
 import css from './LoginPage.module.css';

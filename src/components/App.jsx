@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { Layout, Navigation, PrivateRoute, RestrictedRoute } from 'components';
+import { Layout, PrivateRoute, RestrictedRoute } from 'components';
 import { Loader } from 'Loader';
 
 import { useDispatch } from 'react-redux';
