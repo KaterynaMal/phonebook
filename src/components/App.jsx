@@ -1,7 +1,8 @@
 import React, { lazy, Suspense, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import { Layout, PrivateRoute, RestrictedRoute } from 'components';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import { Layout, Navigation, PrivateRoute, RestrictedRoute } from 'components';
 import { Loader } from 'Loader';
+
 import { useDispatch } from 'react-redux';
 import { apiRefreshUser } from 'services/api';
 
@@ -45,6 +46,7 @@ function App() {
               </RestrictedRoute>
             }
           ></Route>
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Suspense>
     </Layout>

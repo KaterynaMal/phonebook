@@ -1,4 +1,6 @@
 import { Navigation, UserMenu } from 'components';
+import { ToastContainer } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 import React from 'react';
 import { useSelector } from 'react-redux';
@@ -15,7 +17,8 @@ const Layout = ({ children }) => {
         <Navigation></Navigation>
         {isLoggedIn && <UserMenu></UserMenu>}
       </header>
-      <main>
+      <main className={css.mainContainer}>
+        <ToastContainer position="top-center"/>
         {!isLoggedIn && (
           <p className={css.title}>
             To see your contacts, please login or register!

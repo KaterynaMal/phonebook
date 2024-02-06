@@ -1,5 +1,9 @@
 import axios from 'axios';
+import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
+
+
+const notify = (message) => toast.error(message);
 
 export const $authInstance = axios.create({
   baseURL: 'https://connections-api.herokuapp.com',
@@ -57,6 +61,7 @@ export const apiRegisterUser = createAsyncThunk(
       setToken(data.token);
       return data;
     } catch (error) {
+      notify(error.message);
       return thunkApi.rejectWithValue(error.message);
     }
   }
@@ -72,6 +77,7 @@ export const apiLoginUser = createAsyncThunk(
 
       return data;
     } catch (error) {
+      notify(error.message);
       return thunkApi.rejectWithValue(error.message);
     }
   }
