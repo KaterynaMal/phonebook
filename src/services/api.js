@@ -2,8 +2,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-
-const notify = (message) => toast.error(message);
+const notify = () => toast.error(`Incorrect email or password! Please, try again!`);
 
 export const $authInstance = axios.create({
   baseURL: 'https://connections-api.herokuapp.com',
