@@ -24,7 +24,7 @@ const RegisterPage = () => {
 
   return (
     <div>
-      <h1 className={css.submitTitle}>RegisterPage</h1>
+      <h1 className={css.submitTitle}>Register</h1>
 
       <form onSubmit={onSubmit} className={css.submitForm}>
         <label className={css.label}>

@@ -1,32 +1,59 @@
 .container {
-  /* width: 800px; */
-  margin-left: 120px;
-  margin-right: 120px;
-  border: 1px solid rgb(225, 247, 225);
-  background-color: rgb(242, 231, 253);
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(237, 242, 250);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  /* padding-bottom: 50px; */
-  padding: 50px 30px;
+  padding: 0 20px;
   min-height: 100vh;
 }
 
-
-
 .header {
   display: flex;
-  height: 95px;
-  justify-content: space-between;
+  padding: 20px 0;
+  height: 40px;
+  justify-content: flex-end;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   position: sticky;
-  background-color: rgb(217, 246, 219);
-  padding-left: 100px;
-  padding-right: 100px;
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 .title {
-  padding-left: 100px;
-  font-size: 26px;
-  line-height: 2;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
+.spanTitle {
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.navlink {
+  text-decoration: none;
+  color: rgba(9, 9, 66, 0.892);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}

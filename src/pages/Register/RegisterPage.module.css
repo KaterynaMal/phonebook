@@ -2,25 +2,26 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 370px;
-  padding-left: 100px;
+  width: 270px;
+  /* padding-left: 100px; */
 }
 
 .submitTitle {
-  padding-left: 100px;
-  font-size: 24px;
+  /* padding-left: 100px; */
+  font-size: 20px;
   margin-bottom: 35px;
   margin-top: 35px;
 }
 
 .label {
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 
 .input {
-  width: 250px;
+  width: 210px;
   border-radius: 5px;
   border: 1px solid rgb(56, 55, 55);
   padding: 7px 10px;
@@ -29,11 +30,11 @@
 .btn {
   cursor: pointer;
   border-radius: 15px;
-  border: 1px solid rgb(56, 55, 55);
+  border: 1px solid rgba(9, 9, 66, 0.892);
   font-size: 16px;
   color: rgb(56, 55, 55);
   background-color: aliceblue;
-  padding: 10px 45px;
+  padding: 5px 45px;
   margin-left: 0;
   margin-right: auto;
   margin-top: 15px;
@@ -41,7 +42,8 @@
 
 .btn:hover,
 .btn:focus {
-  border-color: rgb(28, 113, 49);
-  color: rgb(28, 113, 49);
+  border-color: rgba(9, 9, 66, 0.892);
+  color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: rgba(63, 63, 250, 0.892);
 }
