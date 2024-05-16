@@ -52,8 +52,35 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
+ .container {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 35px;
+  margin-right: 35px;
+ }
+
+
 }
+
+@media screen and (min-width: 1440px) {
+  .container {
+   padding-left: 150px;
+   padding-right: 150px;
+   margin-left: 70px;
+   margin-right: 70px;
+  }
+ 
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+   
+   
+  }
+
+  .spanTitle {
+    font-size: 20px;
+    font-weight: 500;
+   line-height: 1.5;
+  }
+ 
+ }

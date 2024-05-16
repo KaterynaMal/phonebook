@@ -47,3 +47,12 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background-color: rgba(63, 63, 250, 0.892);
 }
+
+@media screen and (min-width: 768px) {
+ 
+ 
+  .input {
+   width: 270px;
+  }
+ }
+ 

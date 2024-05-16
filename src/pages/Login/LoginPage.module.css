@@ -18,12 +18,13 @@
   font-size: 16px;
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .input {
   width: 210px;
   border-radius: 5px;
-  border: 1px solid rgb(56, 55, 55);
+  border: 1px solid rgba(9, 9, 66, 0.892);
   padding: 7px 10px;
   margin-right: 10px;
 }
@@ -31,10 +32,12 @@
 .btn {
   cursor: pointer;
   border-radius: 15px;
-  border: 1px solid rgb(56, 55, 55);
+  border: 1px solid rgba(9, 9, 66, 0.892);
+
+  /* border: none; */
   font-size: 16px;
-  color: rgb(56, 55, 55);
-  background-color: aliceblue;
+  color: rgba(9, 9, 66, 0.892);
+  background-color: rgb(232, 240, 254);
   padding: 5px 45px;
 
   margin-left: 0;
@@ -49,3 +52,12 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background-color: rgba(63, 63, 250, 0.892);
 }
+
+@media screen and (min-width: 768px) {
+ 
+ 
+  .input {
+   width: 270px;
+  }
+ }
+ 
