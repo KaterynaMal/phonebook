@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/75.96651fe1.chunk.css","mappings":"AAAA,gCACE,gBAAiB,CACjB,iBACF,CAEA,GACE,SACF,CAEA,gCACE,cACF","sources":["pages/Contacts/Contacts.module.css"],"sourcesContent":[".form_container {\n  margin-left: auto;\n  margin-right: auto;\n}\n\nul {\n  padding: 0;\n}\n\n.phoneBookTitle {\n  font-size: 24px;\n}\n"],"names":[],"sourceRoot":""}
