@@ -8,7 +8,7 @@ const ContactsPage = () => {
 
   return (
     <div className={css.form_container}>
-      <h1 className={css.phoneBookTitle}>Phonebook</h1>
+      <h1 className={css.phoneBookTitle}>Create new contact</h1>
 
       <ContactForm location={location}></ContactForm>
       <h2>Contacts</h2>

@@ -6,3 +6,5 @@ export { Navigation } from './Navigations/Navigation.jsx';
 export { UserMenu } from './UserMenu/UserMenu.jsx';
 export { RestrictedRoute } from './RestrictedRoute/RestrictedRoute.jsx';
 export { PrivateRoute } from './PrivateRoute/PrivateRoute';
+export {Container} from './Container/Container.jsx';
+export {Section} from './Section/Section.jsx'

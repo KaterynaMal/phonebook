@@ -1,0 +1,19 @@
+.section {
+  background-color: rgba(9, 9, 66, 0.892);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
