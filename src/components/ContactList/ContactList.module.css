@@ -28,7 +28,7 @@
 }
 
 .delete_btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(186, 186, 251, 0.892) 0px 3px 8px;
 }
 
 @media screen and (min-width: 768px) {

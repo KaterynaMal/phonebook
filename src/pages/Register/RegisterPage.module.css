@@ -3,11 +3,9 @@
   flex-direction: column;
   gap: 15px;
   width: 270px;
-  /* padding-left: 100px; */
 }
 
 .submitTitle {
-  /* padding-left: 100px; */
   font-size: 20px;
   margin-bottom: 35px;
   margin-top: 35px;
@@ -17,7 +15,6 @@
   font-size: 16px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .input {
@@ -49,10 +46,7 @@
 }
 
 @media screen and (min-width: 768px) {
- 
- 
   .input {
-   width: 270px;
+    width: 270px;
   }
- }
- 
+}

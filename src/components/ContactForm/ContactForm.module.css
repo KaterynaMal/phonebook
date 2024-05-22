@@ -23,7 +23,6 @@
   padding: 8px 8px;
   border-radius: 50px;
   border: none;
-  background-color: rgb(231, 230, 230);
   background-color: rgba(186, 186, 251, 0.892);
   cursor: pointer;
   align-self: flex-end;
@@ -31,7 +30,7 @@
 }
 
 .btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(186, 186, 251, 0.892) 0px 3px 8px;
 }
 
 .addContactIcon {
