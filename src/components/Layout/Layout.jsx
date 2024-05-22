@@ -1,4 +1,4 @@
-import { UserMenu } from 'components';
+import { UserMenu, Navigation } from 'components';
 import { NavLink } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
     <Section className={css.section}>
       <Container className={css.container}>
         <header className={css.header}>
-          {/* <Navigation></Navigation> */}
+          <Navigation></Navigation>
           {isLoggedIn && <UserMenu></UserMenu>}
         </header>
         <main className={css.mainContainer}>
