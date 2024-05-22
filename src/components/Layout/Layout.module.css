@@ -1,14 +1,11 @@
 .container {
- 
- 
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  /* padding: 0 20px; */
   min-height: 100vh;
 }
 
 .header {
   display: flex;
-  padding: 20px 0;
+  padding: 40px 0;
   height: 40px;
   justify-content: flex-end;
   align-items: center;
@@ -50,34 +47,15 @@
   color: rgba(9, 9, 66, 0.892);
 }
 
-/* @media screen and (min-width: 768px) {
- .container {
-  padding-left: 50px;
-  padding-right: 50px;
-  
- }
-
-
-} */
-
 @media screen and (min-width: 1440px) {
-  /* .container {
-   padding-left: 150px;
-   padding-right: 150px;
-  
-  } */
- 
   .title {
     font-size: 28px;
     font-weight: 700;
-   
-   
   }
 
   .spanTitle {
     font-size: 20px;
     font-weight: 500;
-   line-height: 1.5;
+    line-height: 1.5;
   }
- 
- }
+}

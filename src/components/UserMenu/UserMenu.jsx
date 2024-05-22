@@ -23,6 +23,9 @@ const UserMenu = () => {
         disabled={isLoading}
         type="button"
       >
+        <svg className={css.exitIcon} width="17" height="17">
+          <use href="image/symbol-defs.svg#icon-exit"></use>
+        </svg>
         Logout
       </button>
     </div>

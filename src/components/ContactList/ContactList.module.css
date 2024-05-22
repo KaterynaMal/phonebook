@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-bottom: 45px;
+  padding-bottom: 65px;
+  list-style:none;
 }
 
 .contact_item {
