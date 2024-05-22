@@ -40,7 +40,9 @@ const ContactList = () => {
                 className={css.delete_btn}
                 onClick={() => handleDeleteContact(contact.id)}
               >
-                Delete
+                <svg className={css.deleteContactIcon} width="17" height="17">
+                  <use href="image/symbol-defs.svg#icon-user-minus"></use>
+                </svg>
               </button>
             </li>
           ))

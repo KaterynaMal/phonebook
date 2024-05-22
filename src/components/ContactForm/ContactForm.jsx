@@ -41,7 +41,10 @@ const ContactForm = () => {
         <input className={css.input} type="tel" name="number" required />
 
         <button className={css.btn} type="submit">
-          Add contact
+          <svg className={css.addContactIcon} width='36' height='36'>
+            <use href='image/symbol-defs.svg#icon-user-plus'></use>
+          </svg>
+
         </button>
       </form>
     </div>

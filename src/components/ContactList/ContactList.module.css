@@ -2,27 +2,45 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-bottom: 45px;
 }
 
 .contact_item {
   display: flex;
-  width: 380px;
   justify-content: space-between;
   gap: 15px;
   align-items: center;
+  border-bottom: 1px solid rgba(186, 186, 251, 0.892);
 }
 
 .contact_item:hover {
-  text-decoration: underline;
+  color: rgba(9, 9, 66, 0.892);
+  font-weight: 600;
 }
 
 .delete_btn {
-  background-color: aliceblue;
-  border-color: rgb(248, 246, 246);
+  background-color: rgba(186, 186, 251, 0.892);
+  border: none;
   cursor: pointer;
-  padding: 5px;
+  padding-top: 6px;
+  border-radius: 50px;
+  margin-bottom: 5px;
 }
 
 .delete_btn:hover {
-  background-color: rgb(221, 248, 239);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .deleteContactIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .deleteContactIcon {
+    width: 22px;
+    height: 22px;
+  }
 }

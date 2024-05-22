@@ -19,15 +19,23 @@
 }
 
 .btn {
-  width: 120px;
-  padding: 10px 10px;
-  background-color: aliceblue;
-  border-color: rgb(248, 246, 246);
+  display: flex;
+  padding: 8px 8px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(231, 230, 230);
+  background-color: rgba(186, 186, 251, 0.892);
   cursor: pointer;
+  align-self: flex-end;
+  margin-top: 10px;
 }
 
 .btn:hover {
-  background-color: rgb(221, 248, 239);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.addContactIcon {
+  fill: rgba(9, 9, 66, 0.892);
 }
 
 @media screen and (min-width: 768px) {
@@ -37,6 +45,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .form {
+    width: 377px;
+  }
   .input {
     width: 350px;
   }
