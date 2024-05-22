@@ -3,9 +3,8 @@
   flex-direction: column;
   gap: 15px;
   width: 270px;
- padding-right: 10px;
- margin-right: auto;
-
+  padding-right: 10px;
+  margin-right: auto;
 }
 
 .submitTitle {
@@ -31,33 +30,40 @@
 
 .btn {
   cursor: pointer;
-  border-radius: 15px;
-  border: 1px solid rgba(9, 9, 66, 0.892);
-
-  /* border: none; */
+  border: none;
+  border-radius: 50px;
   font-size: 16px;
   color: rgba(9, 9, 66, 0.892);
-  background-color: rgb(232, 240, 254);
-  padding: 5px 45px;
-
   margin-left: 0;
   margin-right: auto;
   margin-top: 15px;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 20px;
+  width: 130px;
+  background-color: rgba(186, 186, 251, 0.892);
 }
 
 .btn:hover,
 .btn:focus {
-  border-color: rgba(9, 9, 66, 0.892);
-  color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  background-color: rgba(63, 63, 250, 0.892);
+  box-shadow: rgba(186, 186, 251, 0.892) 0px 3px 8px;
 }
 
 @media screen and (min-width: 768px) {
- 
- 
   .input {
-   width: 270px;
+    width: 270px;
   }
- }
- 
+}
+
+@media screen and (min-width: 1440px) {
+  .loginIcon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+}

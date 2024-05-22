@@ -47,6 +47,9 @@ const LoginPage = () => {
           />
         </label>
         <button type="submit" className={css.btn}>
+        <svg className={css.exitIcon} width="17" height="17">
+          <use href="image/symbol-defs.svg#icon-enter"></use>
+        </svg>
           Sign In
         </button>
       </form>
