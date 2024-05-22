@@ -48,7 +48,7 @@
   content: '';
   width: 2px;
   height: 100%;
-  background-color: rgb(56, 55, 55);
+  background-color: rgba(9, 9, 66, 0.892);
   position: absolute;
   left: -10px;
   bottom: 0px;

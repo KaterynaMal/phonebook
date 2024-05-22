@@ -3,6 +3,19 @@
   flex-direction: column;
   gap: 10px;
   margin-left: 25px;
+  position: relative;
+}
+
+.userMenuContainer::before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-color: rgba(9, 9, 66, 0.892);
+  left: -10px;
+  bottom: 0px;
+  flex-shrink: 0;
+  
 }
 
 .userMenuMail {
@@ -11,10 +24,10 @@
   color: rgba(9, 9, 66, 0.892);
 }
 
-.userMenuMail:hover,
+/* .userMenuMail:hover,
 .userMenuMail:focus {
   text-decoration: underline;
-}
+} */
 
 .userMenuButton {
   display: flex;
