@@ -17,9 +17,10 @@ const Navigation = () => {
           }
           to="/contacts"
         >
-          Contacts
+          {/* Contacts */}
         </NavLink>
-      ) : (
+      ) : 
+      (
         <div className={css.loginRegisterContainer}>
           <NavLink
             className={({ isActive }) =>

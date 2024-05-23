@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 10px;
   padding-bottom: 65px;
-  list-style:none;
+  list-style: none;
 }
 
 .contact_item {
@@ -43,5 +43,9 @@
   .deleteContactIcon {
     width: 22px;
     height: 22px;
+  }
+
+  .phoneList {
+    width: 890px;
   }
 }
